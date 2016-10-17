@@ -4,6 +4,10 @@ jdk:
 install:
 - mvn -N io.takari:maven:wrapper
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+env:
+- BLOG_DB_URL=$BLOG_DB_URL
+- BLOG_DB_USER=$BLOG_DB_USER
+- BLOG_DB_PASSWORD=$BLOG_DB_PASSWORD
 deploy:
  provider: heroku
  api-key:
