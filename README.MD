@@ -1,0 +1,1 @@
+A new blog. This is a project to learn the functionality of Spring Boot.
